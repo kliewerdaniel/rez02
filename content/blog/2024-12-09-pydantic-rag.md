@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  PydanticAI-RAG
+title:  Pydantic RAG
 date:   2024-12-09 07:42:44 -0500
+categories: ["AI Integration & Development", "Technical Tutorials"]
+tags: ["RAG", "Pydantic", "Python", "AI", "Data Validation"]
 ---
 
 Below is a comprehensive, step-by-step guide designed for developers looking to combine persona-driven data modeling with Retrieval-Augmented Generation (RAG) using Pydantic AI’s Agent and Tools APIs. We’ll integrate concepts from the **PersonaGen07 repository**, the **RAG example from Pydantic AI**, and the **Agent** and **Tools** APIs into a cohesive system. By the end, you’ll have a working setup that allows you to define personas, retrieve relevant documents, and produce AI-generated responses customized to each persona’s style and preferences.

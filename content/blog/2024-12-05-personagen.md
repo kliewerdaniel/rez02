@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  PersonaGen
-date:   2024-12-02 07:42:44 -0500
+date:   2024-12-05 07:42:44 -0500
+categories: ["AI Integration & Development", "Writing & Content Generation", "Technical Tutorials"]
+tags: ["AI", "Persona Generation", "Content Creation", "Python", "LLM"]
 ---
 
 https://github.com/kliewerdaniel/PersonaGen

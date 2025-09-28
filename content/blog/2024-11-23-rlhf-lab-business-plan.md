@@ -2,6 +2,8 @@
 layout: post
 title:  RLHF-Lab Business Plan
 date: 2024-11-23 04:40:44 -0500
+categories: ["Business & Planning", "Data Annotation & ML"]
+tags: ["Business Plan", "RLHF", "Data Annotation", "Startup", "Company"]
 ---
 # **RLHF-Lab Business Plan**
 

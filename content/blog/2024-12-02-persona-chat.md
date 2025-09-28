@@ -2,6 +2,8 @@
 layout: post
 title:  Persona Chat
 date:   2024-12-02 07:42:44 -0500
+categories: ["AI Integration & Development", "Writing & Content Generation", "Technical Tutorials"]
+tags: ["AI", "Persona", "Chatbot", "LangChain", "OpenAI", "NLP"]
 ---
 # Building a Personalized AI Assistant with LangChain: A Starting Point for Your Next NLP Project
 

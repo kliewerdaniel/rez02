@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  Scrape Your Reddit Feed to Analyze Yourself and Generate Blog Posts
+title:  Scrape Reddit Analysis Blog
 date:   2025-02-03 07:42:44 -0500
+categories: ["AI Integration & Development", "Technical Tutorials"]
+tags: ["AI", "Reddit", "Scraping", "Analysis", "Python"]
 ---
 
 

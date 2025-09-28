@@ -2,6 +2,8 @@
 layout: post
 title:  Creating AI Agents
 date:   2024-10-30 03:40:44 -0500
+categories: ["AI Integration & Development", "Technical Tutorials"]
+tags: ["AI", "Agents", "Philosophy", "Technology", "Programming"]
 ---
 # The Creation of the Digital Übermensch: A Guide to Building AI Agents
 

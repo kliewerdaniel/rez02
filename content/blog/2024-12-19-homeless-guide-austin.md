@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  Homeless Guide Austin
-date: 2024-12-25 07:42:44 -0500
+date:   2024-12-19 07:42:44 -0500
+categories: ["Personal Knowledge Management", "Technical Tutorials"]
+tags: ["Homeless", "Austin", "Guide", "Resources", "Community"]
 ---
 # Navigating Homelessness in Austin: A Comprehensive Guide with Personal Insights
 

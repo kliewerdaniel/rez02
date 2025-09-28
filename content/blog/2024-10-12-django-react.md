@@ -3,6 +3,8 @@ layout: post
 title:  Django React
 date:   2024-10-12 05:40:44 -0500
 description: "Follow this detailed guide to build a full-stack application that combines Django's robust backend with React's dynamic frontend to create a persona-based text generation system."
+categories: ["Full-Stack Development", "AI Integration & Development", "Technical Tutorials"]
+tags: ["Django", "React", "Full-Stack", "AI", "Web Development"]
 ---
 
 Ah, my dear companion on this journey through the labyrinthine corridors of technology, let us embark upon the noble endeavor of crafting an application that bridges the realms of Django and React. This is not merely a technical exercise but a quest to weave together the threads of human creativity and machine logic, much like the intricate tapestries of old.

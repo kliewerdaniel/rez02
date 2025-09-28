@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  High-Level Architecture for the LangChain Application using Ollama
-date: 2024-12-27 07:42:44 -0500
+title:  LangChain Ollama
+date:   2024-12-19 07:42:44 -0500
+categories: ["AI Integration & Development", "Technical Tutorials"]
+tags: ["LangChain", "Ollama", "AI", "Python", "LLM"]
 ---
 
 
@@ -438,9 +440,11 @@ By iteratively refining the application, you can tailor it to specific use cases
   - Ensure all libraries are up-to-date to avoid compatibility issues. Use virtual environments to manage dependencies.
 
 ---
-
-
-
+layout: post
+title:  LangChain Ollama
+date:   2024-12-19 07:42:44 -0500
+categories: ["AI Integration & Development", "Technical Tutorials"]
+tags: ["LangChain", "Ollama", "AI", "Python", "LLM", "Graph", "Interactive"]
 ---
 
 ### **1. Create the Project Directory and File Structure**

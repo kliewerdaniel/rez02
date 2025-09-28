@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  Building a Multimodal Story Generation System Complete Setup Guide
+title:  Building a Multimodal Story Generation System
 date:   2025-01-23 07:42:44 -0500
+categories: ["AI Integration & Development", "Writing & Content Generation", "Technical Tutorials"]
+tags: ["AI", "Multimodal", "Story Generation", "Python", "LLM"]
 ---
 
 
@@ -161,4 +163,4 @@ services:
 
 **Daniel Kliewer**  
 [GitHub Profile](https://github.com/kliewerdaniel)  
-*AI Systems Developer*  
+*AI Systems Developer*

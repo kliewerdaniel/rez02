@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  Image to Book Generator
+title:  Image to Book
 date:   2025-01-22 07:42:44 -0500
+categories: ["AI Integration & Development", "Writing & Content Generation", "Technical Tutorials"]
+tags: ["AI", "Image Processing", "Content Generation", "Python", "LLM"]
 ---
 **Introduction: Building an AI-Powered Narrative Generation System**  
 

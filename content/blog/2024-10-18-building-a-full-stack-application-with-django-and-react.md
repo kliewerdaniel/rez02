@@ -2,6 +2,8 @@
 layout: post
 title: Building a Full-Stack Application with Django and React
 date: 2024-10-18 05:40:44 -0500
+categories: ["Full-Stack Development", "AI Integration & Development", "Technical Tutorials"]
+tags: ["Django", "React", "Full-Stack", "AI", "Ollama", "LLM"]
 ---
 
 # Building a Full-Stack Application with Django and React: A Step-by-Step Guide

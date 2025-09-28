@@ -2,6 +2,8 @@
 layout: post
 title:  Cultural Fingerprints in AI; A Comparative Analysis of Ethical Guardrails in Large Language Models Across US, Chinese, and French Implementations
 date:   2024-12-30 07:42:44 -0500
+categories: ["AI Integration & Development", "Technical Tutorials"]
+tags: ["AI", "Cultural Analysis", "Ethics", "LLM", "Comparative Study"]
 ---
 
 ## Cultural Fingerprints in AI; A Comparative Analysis of Ethical Guardrails in Large Language Models Across US, Chinese, and French Implementations

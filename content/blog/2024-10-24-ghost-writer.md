@@ -2,6 +2,8 @@
 layout: post
 title: Ghost Writer
 date: 2024-10-24 05:40:44 -0500
+categories: ["Writing & Content Generation", "Business & Planning", "Technical Tutorials"]
+tags: ["AI", "Writing Assistant", "Business", "Content Creation", "Django", "React"]
 ---
 
 ## Table of Contents
