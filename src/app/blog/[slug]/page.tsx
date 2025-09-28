@@ -2,6 +2,8 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
+import TableOfContents from '../../components/TableOfContents';
+import Callout from '../../components/Callout';
 
 interface BlogPost {
   slug: string;
@@ -120,8 +122,53 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     );
   }
 
+  // Process content to add heading IDs
+  const processContentWithHeadings = (content: string) => {
+    const lines = content.split('\n');
+    const processedLines: string[] = [];
+    let inCodeBlock = false;
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+
+      // Check if we're entering or exiting a code block
+      if (line.trim().startsWith('```')) {
+        inCodeBlock = !inCodeBlock;
+        processedLines.push(line);
+        continue;
+      }
+
+      // Skip processing headings inside code blocks
+      if (inCodeBlock) {
+        processedLines.push(line);
+        continue;
+      }
+
+      // Process headings
+      const headingMatch = line.match(/^(#{1,6})\s+(.+)$/);
+      if (headingMatch) {
+        const level = headingMatch[1].length;
+        const text = headingMatch[2].trim();
+        const id = text
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-')
+          .replace(/-+/g, '-')
+          .trim();
+
+        processedLines.push(`${'#'.repeat(level)} <span id="${id}">${text}</span>`);
+      } else {
+        processedLines.push(line);
+      }
+    }
+
+    return processedLines.join('\n');
+  };
+
+  const processedContent = processContentWithHeadings(post.content);
+
   return (
-    <div>
+    <div className="relative">
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         {/* Back to Blog */}
         <div className="mb-8">
@@ -176,9 +223,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
           {/* Article Content */}
           <div className="prose prose-lg dark:prose-invert max-w-none">
-            <div className="whitespace-pre-wrap text-gray-700 dark:text-gray-300 leading-relaxed">
-              {post.content.replace(new RegExp("'", "g"), "")}
-            </div>
+            <div
+              className="whitespace-pre-wrap text-gray-700 dark:text-gray-300 leading-relaxed"
+              dangerouslySetInnerHTML={{
+                __html: processedContent.replace(new RegExp("'", "g"), "")
+              }}
+            />
           </div>
         </article>
 
@@ -206,6 +256,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </nav>
       </div>
+
+      {/* Table of Contents */}
+      <TableOfContents content={post.content} />
     </div>
   );
 }

@@ -71,10 +71,10 @@ export default async function BlogPage() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl">
+          <h1 className="text-4xl font-bold text-white sm:text-5xl">
             Blog
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
             I write about AI engineering, practical tooling, and experiments in local-first model deployment.
             Posts are Markdown and can embed code & demos.
           </p>
@@ -86,8 +86,8 @@ export default async function BlogPage() {
             <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
             </svg>
-            <h3 className="mt-2 text-sm font-medium text-gray-900 dark:text-white">No blog posts yet</h3>
-            <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            <h3 className="mt-2 text-sm font-medium text-white">No blog posts yet</h3>
+            <p className="mt-1 text-sm text-gray-400">
               Blog posts will appear here as they are written.
             </p>
           </div>
@@ -96,10 +96,10 @@ export default async function BlogPage() {
             {posts.map((post) => (
               <article
                 key={post.slug}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                className="bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="p-6">
-                  <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
+                  <div className="flex items-center text-sm text-gray-400 mb-2">
                     <time dateTime={post.date}>
                       {new Date(post.date).toLocaleDateString('en-US', {
                         year: 'numeric',
@@ -109,16 +109,16 @@ export default async function BlogPage() {
                     </time>
                   </div>
 
-                  <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                  <h2 className="text-xl font-semibold text-white mb-3">
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                      className="hover:text-cyan-400 transition-colors"
                     >
                       {post.title}
                     </Link>
                   </h2>
 
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
+                  <p className="text-gray-300 text-sm mb-4 line-clamp-3">
                     {post.description}
                   </p>
 
@@ -138,7 +138,7 @@ export default async function BlogPage() {
 
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="text-sm text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 font-medium"
+                    className="text-sm text-cyan-400 hover:text-cyan-300 font-medium"
                   >
                     Read more →
                   </Link>
@@ -152,7 +152,7 @@ export default async function BlogPage() {
         <div className="mt-16 text-center">
           <a
             href="/rss.xml"
-            className="inline-flex items-center text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+            className="inline-flex items-center text-sm text-gray-400 hover:text-gray-300 transition-colors"
           >
             <svg className="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z" />
