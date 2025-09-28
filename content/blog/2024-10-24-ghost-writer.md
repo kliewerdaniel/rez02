@@ -1,10 +1,22 @@
 ---
 layout: post
-title:  Ghost Writer
-date:   2024-10-24 05:40:44 -0500
+title: Ghost Writer
+date: 2024-10-24 05:40:44 -0500
 ---
 
-https://github.com/kliewerdaniel/GhostWriter
+## Table of Contents
+
+1. [Overview of GhostWriter](#ghostwriter-your-ai-powered-sidekick-for-exceptional-writing)
+2. [Key Features](#key-features-that-will-elevate-your-writing)
+3. [**Setup Guide**](#setting-up-ghostwriter)
+   - [Prerequisites](#prerequisites)
+   - [Installation Steps](#installation-steps)
+4. [**Getting Started**](#getting-started-with-ghostwriter)
+5. [**Use Cases**](#use-cases)
+6. [**Troubleshooting**](#troubleshooting)
+7. [**Conclusion**](#wrapping-up)
+
+GitHub Repository: [kliewerdaniel/GhostWriter](https://github.com/kliewerdaniel/GhostWriter)
 
 # GhostWriter: Your AI-Powered Sidekick for Exceptional Writing
 

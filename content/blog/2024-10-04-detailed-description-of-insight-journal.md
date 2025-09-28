@@ -4,9 +4,10 @@ layout: post
 title: Detailed Description of Insight Journal
 description: "Discover how Insight Journal enhances personal reflection through locally-hosted LLMs, offering AI-generated feedback while maintaining privacy and control over your data."
 ---
+
 # **Developing an AI-Integrated Insight Journal: Enhancing Personal Reflection through Locally Hosted Language Models**
 
-## **Abstract**
+## Abstract
 
 This dissertation explores the development of an AI-integrated journaling platform named "Insight Journal," which harnesses locally hosted Large Language Models (LLMs) to provide personalized feedback on users' written content. The primary objective is to recreate a collaborative and feedback-driven environment that enhances personal reflection and growth while maintaining control over data privacy and reducing reliance on external services.
 
@@ -16,49 +17,45 @@ This work delves into the technical challenges faced during the integration of l
 
 By reflecting on the content and discussions presented in the blog entries at [danielkliewer.com](https://danielkliewer.com), this dissertation provides a comprehensive guide and critical analysis of building and extending AI-powered personal journaling applications. It offers insights into the future of AI integration in personal projects and its potential impact on users' cognitive processes and self-improvement practices.
 
----
+## Table of Contents
 
-## **Table of Contents**
-
-1. **Introduction**
-   - 1.1 Background and Motivation
-   - 1.2 Objectives and Research Questions
-   - 1.3 Significance of the Study
-2. **Literature Review**
-   - 2.1 AI in Personal Knowledge Management
-   - 2.2 Locally Hosted Language Models
-   - 2.3 Static Site Generators and Hosting Solutions
-   - 2.4 User Experience in AI-Integrated Applications
-3. **Methodology**
-   - 3.1 Project Design and Architecture
-   - 3.2 Technology Stack Overview
-   - 3.3 Development Process
-   - 3.4 Data Generation and Management
-4. **Implementation**
-   - 4.1 Setting Up the Insight Journal Platform
-   - 4.2 Integrating LLMs for Feedback Generation
-   - 4.3 Enhancing Functionality with Economic Analysis
-   - 4.4 User Interface and Experience Enhancements
-5. **Results**
-   - 5.1 System Performance Evaluation
-   - 5.2 User Testing and Feedback
-   - 5.3 Analysis Quality Assessment
-6. **Discussion**
-   - 6.1 Technical Challenges and Solutions
-   - 6.2 Implications of AI Integration in Journaling
-   - 6.3 Data Privacy and Ethical Considerations
-   - 6.4 Comparison with Existing Platforms
-7. **Conclusion**
-   - 7.1 Summary of Findings
-   - 7.2 Contributions to the Field
-   - 7.3 Recommendations for Future Work
-8. **References**
-9. **Appendices**
-   - A. Code Listings
-   - B. User Instructions and Guides
-   - C. Additional Data and Resources
-
----
+1. [**Introduction**](#introduction)
+   - [Background and Motivation](#motivation-behind-developing-the-insight-journal-platform)
+   - [Objectives and Research Questions](#primary-objectives-and-research-questions)
+   - [Significance of the Study](#significance-of-integrating-locally-hosted-llms-into-personal-knowledge-management-tools)
+2. [**Literature Review**](#literature-review)
+   - [AI in Personal Knowledge Management](#21-ai-in-personal-knowledge-management)
+   - [Locally Hosted Language Models](#22-advancements-in-locally-hosted-language-models)
+   - [Static Site Generators and Hosting Solutions](#23-static-site-generators-and-free-hosting-solutions)
+   - [User Experience in AI-Integrated Applications](#24-user-experience-in-ai-integrated-applications)
+3. [**Methodology**](#methodology)
+   - [Project Design and Architecture](#31-overall-design-and-architecture-of-the-insight-journal-platform)
+   - [Technology Stack Overview](#32-selection-of-technologies)
+   - [Development Process](#33-development-process)
+   - [Data Generation and Management](#34-data-generation-and-management)
+4. [**Implementation**](#implementation)
+   - [Setting Up the Insight Journal Platform](#41-initial-setup)
+   - [Integrating LLMs for Feedback Generation](#44-integration-of-llms-for-ai-powered-comments-and-analyses)
+   - [Enhancements for Economic Analysis](#45-enhancements-for-economic-analysis-of-blog-posts)
+   - [User Interface and Experience Enhancements](#46-user-interface-improvements)
+5. [**Results**](#results)
+   - [System Performance Evaluation](#51-system-performance-evaluation)
+   - [User Testing and Feedback](#52-user-testing-and-feedback)
+   - [Analysis Quality Assessment](#53-analysis-quality-assessment)
+6. [**Discussion**](#discussion)
+   - [Technical Challenges and Solutions](#61-technical-challenges-and-solutions)
+   - [Implications of AI Integration in Journaling](#62-implications-of-ai-integration-in-personal-journaling)
+   - [Data Privacy and Ethical Considerations](#63-data-privacy-and-ethical-considerations)
+   - [Comparison with Existing Platforms](#64-comparison-with-existing-solutions)
+7. [**Conclusion**](#conclusion)
+   - [Summary of Findings](#71-summary-of-key-findings)
+   - [Contributions to the Field](#72-contributions-to-the-fields)
+   - [Recommendations for Future Work](#73-recommendations-for-future-work)
+8. [**References**](#references)
+9. [**Appendices**](#appendices)
+   - [Code Listings](#appendix-a-code-listings)
+   - [User Instructions and Guides](#appendix-b-user-instructions-and-guides)
+   - [Additional Data and Resources](#appendix-c-additional-data-and-resources)
 
 # **Introduction**
 
