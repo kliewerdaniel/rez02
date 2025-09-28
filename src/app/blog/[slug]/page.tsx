@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import Link from 'next/link';
 import TableOfContents from '../../components/TableOfContents';
 import Callout from '../../components/Callout';
+import MarkdownRenderer from '../../components/MarkdownRenderer';
 
 interface BlogPost {
   slug: string;
@@ -102,7 +103,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) {
     return (
       <div>
-        <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Post Not Found
@@ -122,50 +123,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     );
   }
 
-  // Process content to add heading IDs
-  const processContentWithHeadings = (content: string) => {
-    const lines = content.split('\n');
-    const processedLines: string[] = [];
-    let inCodeBlock = false;
-
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-
-      // Check if we're entering or exiting a code block
-      if (line.trim().startsWith('```')) {
-        inCodeBlock = !inCodeBlock;
-        processedLines.push(line);
-        continue;
-      }
-
-      // Skip processing headings inside code blocks
-      if (inCodeBlock) {
-        processedLines.push(line);
-        continue;
-      }
-
-      // Process headings
-      const headingMatch = line.match(/^(#{1,6})\s+(.+)$/);
-      if (headingMatch) {
-        const level = headingMatch[1].length;
-        const text = headingMatch[2].trim();
-        const id = text
-          .toLowerCase()
-          .replace(/[^\w\s-]/g, '')
-          .replace(/\s+/g, '-')
-          .replace(/-+/g, '-')
-          .trim();
-
-        processedLines.push(`${'#'.repeat(level)} <span id="${id}">${text}</span>`);
-      } else {
-        processedLines.push(line);
-      }
-    }
-
-    return processedLines.join('\n');
-  };
-
-  const processedContent = processContentWithHeadings(post.content);
 
   return (
     <div className="relative">
@@ -185,7 +142,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         {/* Article Header */}
         <article>
-          <header className="mb-12">
+          <header className="mb-16">
             <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
               <time dateTime={post.date}>
                 {new Date(post.date).toLocaleDateString('en-US', {
@@ -196,7 +153,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               </time>
             </div>
 
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">
               {post.title}
             </h1>
 
@@ -223,12 +180,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
           {/* Article Content */}
           <div className="prose prose-lg dark:prose-invert max-w-none">
-            <div
-              className="whitespace-pre-wrap text-gray-700 dark:text-gray-300 leading-relaxed"
-              dangerouslySetInnerHTML={{
-                __html: processedContent.replace(new RegExp("'", "g"), "")
-              }}
-            />
+            <MarkdownRenderer content={post.content} />
           </div>
         </article>
 
